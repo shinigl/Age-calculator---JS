@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGE CALCULATOR | WT-2 |ANIKET</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+         
+        }
+        .box{
+        
+            max-width: 800px;
+            margin: auto;
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 22px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+            & > p{
+                font-weight: bolder;
+            }
+            & > input{
+                padding: 7px;
+                width: 200px;
+                border-radius: 5px;
+                outline: none;
+                border: 1px solid black;
+            }
+            & > button{
+                padding: 10px 10px;
+                width: 120px;
+                background-color: #007bff;
+                border-radius: 5px;
+                border: 1px ;
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+        #btn:hover{
+            background-color: #0069d9;
+            transition: 0.3s ease;
+        }
+
+        #result {
+            opacity: 1;
+            transition: opacity 1s ease;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <h1>AGE CALCULATOR</h1>
+        <p>ENTER YOUR DATE OF BIRTH</p>
+        <input type="date" id="birthday" name="birthday">
+        <button id="btn"> Calculate Age </button>
+        <h1 id="result"> Your age is 0 </h1>
+    </div>
+    
+<script src="script.js"></script>
+</body>
+</html>
